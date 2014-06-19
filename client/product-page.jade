@@ -1,0 +1,25 @@
+template(name="productPage")
+  section#saqproduct
+    //.link
+      //p
+      //  a(href="{{pathFor 'index'}}") woo; 
+      //  a(href="{{pathFor 'speed'}}") woo; 
+      //  a(href="{{pathFor 'plastic-hurdle'}}") woo
+
+    .saqproduct
+      h1 {{name}}
+      p {{description}}
+      img(src="{{image}}", alt="")
+      //img(src="http://placehold.it/960x450&text=plastic-hurdle", alt="")
+      //img(src="http://placehold.it/960x450&text=plastic-hurdle", alt="")
+      //img(src="http://placehold.it/960x450&text=plastic-hurdle", alt="")
+      //img(src="http://placehold.it/960x450&text=plastic-hurdle", alt="")
+      button Get More Information
+      .pages
+        a(href="#")
+          i.fa.fa-chevron-left
+        span page 1/8
+        a(href="#")
+          i.fa.fa-chevron-right
+
+

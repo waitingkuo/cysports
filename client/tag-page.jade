@@ -1,0 +1,30 @@
+template(name="tagPage")
+  article#saqimg
+    #content
+      .content
+        h1 {{tag.name}}
+        .desc
+          p {{tag.description}}
+
+  section#saq
+    .saq
+      //.link
+      //  p
+      //    a(href="{{pathFor 'index'}}") Home :
+
+      .products
+        h1 {{tag.name}}
+        each products
+          +productItem
+
+template(name="productItem")
+  a(href="{{pathFor 'productPage' _id=_id}}")
+    .items
+      img(src="{{image}}", alt="{{name}}")
+      .desc
+        .box
+          .pdName
+            h3 {{name}}
+          .pdDesc
+            p {{description}}
+

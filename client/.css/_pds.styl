@@ -1,0 +1,125 @@
+#saqimg
+	background rgba(Tomato, .85)
+#ftimg
+	background rgba(Bohe, .85)
+#otimg
+	background rgba(Eggplant, .85)
+#saqimg, #ftimg, #otimg
+	color Gray
+	padding 70px 0
+	#content
+		background rgba(White, 0.8)
+		container 720px
+		.content
+			outline 1px solid White
+			margin 25px
+			padding 40px
+			h1
+				margin 0
+				font-size 2em
+				font-family "Quicksand" sans-serif
+				text-align center
+				text-transform uppercase
+			.desc
+				p
+					font-family "Cardo" serif
+					font-size 1.125em
+					line-height 1.5em
+					&:first-letter
+						text-transform uppercase
+
+#saq
+	background Tomato
+	.saq .products a .items
+		border 1px solid Tomato
+		&:hover
+			.desc
+				background rgba(Tomato, .75)
+#ft
+	background Bohe
+	.ft .products a .items
+		border 1px solid Bohe
+		&:hover
+			.desc
+				background rgba(Bohe, .6)
+
+#ot
+	background Eggplant
+	.ot .products a .items
+		border 1px solid Eggplant
+		&:hover
+			.desc
+				background rgba(Eggplant, .6)
+
+#saq, #ft, #ot
+	color White
+	.saq, .ft, .ot
+		container 960px
+		padding 10px 0 70px
+		.link
+			letter-spacing .05em
+			color rgba(White, .75)
+			a
+				color rgba(White, .75)
+				&:hover
+					color White	
+
+		.products
+			span (1/1)
+			h1
+				text-align center
+				text-transform uppercase
+				font-size 2em
+				font-family "Quicksand" sans-serif
+				letter-spacing .02em
+				margin 30px 0
+			a
+				
+				transition 1s linear .25s
+				-webkit-transition 1s linear .25s
+				.items
+					span (1/3)
+					position relative
+					box-sizing border-box
+					-moz-box-sizing border-box
+					height 320px
+					margin -1px -1px 0 0
+					background rgba(255, 255, 255, .8)
+					img
+						max-width 100%
+					.desc
+						display hidden
+						transition .15s linear .25s
+						-webkit-transition .15s linear .25s
+						position absolute
+						width 320px
+						height 320px
+						top 0
+						color transparent
+						text-align center
+						.box
+							width 75%
+							margin 100px auto 0
+							.pdName, .pdDesc
+								text-transform uppercase
+							.pdName
+								transition .75s linear .25s
+								-webkit-transition .75s linear .25s
+								border-bottom 1px solid transparent
+								margin 100px auto 0
+								h3
+									margin 0 0 15px
+									letter-spacing .05em
+							.pdDesc
+								p
+									font-size 0.75em
+									font-family "Quicksand" sans-serif
+									line-height 2em
+									letter-spacing .06em
+				&:hover
+					.desc
+						display initial
+						color White
+						.box 
+							.pdName
+								border-bottom 1px solid White
