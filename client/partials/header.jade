@@ -7,10 +7,9 @@ template(name="header")
         ul
           li.item
             a(href="story.html") story
-          li.item
-            a(href="{{pathFor 'tagPage' _id='2t9DgrgroTFLKNeaH' }}") speed-agility-quickness
-          li.item
-            a(href="{{pathFor 'tagPage' _id='jqC3dpAEB4QtmwW9F' }}") fitness-training
+          each tags
+            li.item
+              a(href="{{pathFor 'tagPage' _id=this._id }}") {{name}}
           li.item
             a(href="story.html") others
 
